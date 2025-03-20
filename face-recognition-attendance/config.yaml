@@ -1,0 +1,27 @@
+# Configuration file for the face recognition attendance system
+
+# Paths to pre-trained models
+model:
+  face_recognition: "models/facenet_keras.h5"
+  anti_spoofing: "models/anti_spoofing_model.h5"
+
+# Database paths
+database:
+  embeddings: "E:\\Mini_Project\\face-recognition-attendance\\data"
+  attendance: "attendance\\attendance_log.csv"
+  db_path: "E:\\Mini_Project\\face-recognition-attendance\\data"
+
+# Thresholds for similarity and liveness detection
+thresholds:
+  similarity: 0.8        # Face similarity threshold
+  liveness: 0.5          # Liveness detection threshold
+
+# Logging and output paths
+logs:
+  path: "outputs/logs/system.log"
+
+# Application settings
+app:
+  admin_username: "admin"
+  admin_password: "admin123"  # (Optional: You can later implement secure storage)
+  camera_index: 0             # Default camera index
